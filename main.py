@@ -5,7 +5,7 @@
 
 def main():
     lista = []
-    largo = int(input("Ingrese el largo de valores de la lista: "))
+    largo = int(input("Ingrese el largo de valores de la lista:v "))
     for x in range(largo):
         value = input("Ingrese el valor: ")
         lista.append(value)
