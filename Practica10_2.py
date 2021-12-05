@@ -6,17 +6,18 @@ def main():
     while num < 1:
         num = int(input("Debe ser mayor a 0\nIntroduce cuantas notas quiere registrar: "))
 
-    note = int(input("Introduce la nota del 0 al 10: "))
-    while i < num:
+    while i < num + 1:
         note = int(input("Introduce la nota del 0 al 10: "))
-        if note >= 5:
+        if note in range(5, 11):
             app.append(note)
             i += 1
-        elif note <= 4:
+            print("aprovados", app)
+        elif note in range(0, 5):
             rep.append(note)
             i += 1
+            print("reprovados", rep)
         else:
-            int(input("Solo notas del 0 al 10\nIntroduce la nota del 0 al 10: "))
+            print("Solo notas del 0 al 10")
     for y in app:
         s_app += y
         m_app = s_app / len(app)
@@ -24,8 +25,8 @@ def main():
         s_rep += z
         m_rep = s_rep / len(rep)
 
-    print(app)
-    print(rep)
+    print("hay", len(app), "aprobados y su media es: ", m_app)
+    print("hay", len(rep), "reprobados y su media es: ", m_rep)
 
 
 if __name__ == '__main__':
