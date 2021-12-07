@@ -1,8 +1,6 @@
 # demanar a l'usuari quants registres vol introduir
 def main():
     nom, cog1, cog2, phone, years, contacto = [], [], [], [], [], []
-    lst = []
-    pr, x, y = 0, 0, 4
     quants = int(input("Ingrese cuantos vas a registrar: "))
     while quants < 1:
         quants = int(input("Ingrese cuantos vas a registrar: "))
