@@ -5,18 +5,27 @@ def main():
         "department": dpt,
         "classroom": cls
     }
-    user = str(input("Ingrese Nombre de Usuario: "))
-    usr.append(user)
+    quants = int(input("Ingrese cuantos vas a registrar: "))
+    while quants < 1:
+        quants = int(input("Ingrese cuantos vas a registrar: "))
+    for x in range(quants):
 
-    depar = str(input("Ingrese Nombre de departamento: "))
-    dpt.append(depar)
+        user = str(input("Ingrese Nombre de Usuario: "))
+        while len(user) < 1:
+            user = str(input("Ingrese Nombre de Usuario: "))
+        usr.append(user)
 
-    classroom = int(input("Ingrese numero de classroom entre 1 y 15: "))
-    while classroom < 1 or classroom > 15:
+        depar = str(input("Ingrese Nombre de departamento: "))
+        while len(user) < 1:
+            depar = str(input("Ingrese Nombre de departamento: "))
+        dpt.append(depar)
+
         classroom = int(input("Ingrese numero de classroom entre 1 y 15: "))
-    cls.append(classroom)
+        while classroom < 1 or classroom > 15:
+            classroom = int(input("Ingrese numero de classroom entre 1 y 15: "))
+        cls.append(classroom)
 
-    print(dictio)
+        print(dictio)
 
 
 if __name__ == '__main__':
