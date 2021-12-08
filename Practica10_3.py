@@ -26,6 +26,7 @@ def main():
         cls.append(classroom)
 
         print(dictio)
+        print(dictio)
 
 
 if __name__ == '__main__':
