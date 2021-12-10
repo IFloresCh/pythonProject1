@@ -3,8 +3,11 @@ def main():
 
     state = state.split()
 
-    result = [x for x in state if len(x) < 6]
+    result = [x for x in state if len(x) < 5]
     print(result)
+
+    #result = [x for x in state.split() if len(x) < 5]
+    #print(result)
 
 
 if __name__ == '__main__':
